@@ -1,7 +1,7 @@
 import Ramda from 'ramda';
 
 angular.module('ngRamda', [])
-  .service('ngRamda', NgRamda);
+  .factory('ngRamda', NgRamda);
 
 function NgRamda () {
   return Ramda;
