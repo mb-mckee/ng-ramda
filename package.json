@@ -1,36 +1,36 @@
 {
-  "name": "ng-ramda",
-  "version": "1.0.3",
-  "description": "Angular module/service for RamdaJS",
+  "name": "ng-monet",
+  "version": "1.0.0",
+  "description": "Angular module/service for MonetJs",
   "main": "ngRamda.min.js",
   "scripts": {
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JustinDFuller/ng-ramda.git"
+    "url": "git+https://github.com/JustinDFuller/ng-monet.git"
   },
   "keywords": [
-    "ramda",
+    "monet",
     "functional",
     "angular",
     "module",
     "service",
     "ramdajs",
-    "ng-ramda",
+    "ng-monet",
     "javascript"
   ],
   "author": "Justin Fuller <justindanielfuller@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JustinDFuller/ng-ramda/issues"
+    "url": "https://github.com/JustinDFuller/ng-monet/issues"
   },
-  "homepage": "https://github.com/JustinDFuller/ng-ramda#readme",
+  "homepage": "https://github.com/JustinDFuller/ng-monet#readme",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
-    "ramda": "^0.22.1",
+    "monet": "^0.8.10",
     "webpack": "^1.13.2"
   }
 }
