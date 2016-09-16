@@ -1,10 +1,10 @@
 const webpack = require('webpack');
 
 module.exports = {
-  entry: "./ngMonet.js",
+  entry: "./ngRamda.js",
   output: {
       path: __dirname,
-      filename: "ngMonet.min.js"
+      filename: "ngRamda.min.js"
   },
   module: {
     loaders: [

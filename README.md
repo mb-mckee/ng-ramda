@@ -1,10 +1,10 @@
-# ngMonet
+# ngRamda
 
-### Monet module for Angular 1.x
+### Ramda module for Angular 1.x
 
-``` npm install ng-monet --save ```
+``` npm install ng-ramda --save ```
 
-Import ngMonet as an Angular service.
+Import ngRamda as a service. The other Angular Ramda module puts everything in the root scope, which is an Angular antipattern for obvious reason. If you like using the Angular injection pattern, as you should, this may serve your purposes better!
 
 First add the script in your HTML file.
 ```html
@@ -12,31 +12,28 @@ First add the script in your HTML file.
   <!-- Import angular first -->
   <script src='/node_modules/angular/angular.min.js'></script>
   <!-- Import ng-ramda second -->
-  <script src='/node_modules/ng-monet/ngMonet.min.js'></script>
+  <script src='/node_modules/ng-ramda/ngRamda.min.js'></script>
 </body>
 ```
 
 OR import via JavaScript
 
 ```javascript
-import 'ng-monet';
+import 'ng-ramda';
 
 // or
 
-require('ng-monet');
+require('ng-ramda');
 ```
 
 Then just inject the module and service.
 
 ```javascript
 
-angular.module('myApp', ['ngMonet'])
-  .service('myService', function myService (ngMonet, $http) {
-    var getPost = ngMonet.IO(postId => $http.get(`/API/posts/${postId}`));
-    var updatePost = postId => ngMonet.IO(postBody => $http.post('/API/posts', { id: postId, body: postBody }));
-    return {
-      getPost,
-      updatePost,
-    };
+angular.module('myApp', ['ngRamda'])
+  .service('myService', function myService (ngRamda) {
+    var myOtherFunction = (something, someNumber) => something.id + someNumber;
+    var myFunction = ngRamda.curry(myOtherFunction);
+    return myFunction;
   });
 ```
