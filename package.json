@@ -1,6 +1,6 @@
 {
   "name": "ng-ramda",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Angular module/service for RamdaJS",
   "main": "ngRamda.min.js",
   "scripts": {
