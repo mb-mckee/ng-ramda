@@ -37,3 +37,5 @@ angular.module('myApp', ['ngRamda'])
     return myFunction;
   });
 ```
+
+Ramda docs can be found here: http://ramdajs.com/0.22.1/index.html
